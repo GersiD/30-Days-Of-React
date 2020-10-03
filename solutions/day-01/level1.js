@@ -73,3 +73,20 @@ const countries = [
         age : 23,
     },
   }
+
+  // Classes
+
+  class Person {
+    constructor(firstName, lastName, age) {
+      this.firstName = firstName
+      this.lastName = lastName
+      this.age = age
+    }
+
+    get getAge() {
+        return this.age
+    }
+}
+
+const p = new Person("Gersi", "Doko", 20)
+console.log("Persons age = " + p.getAge)
